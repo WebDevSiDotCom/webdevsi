@@ -44,3 +44,7 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+
+.nav-links{
+	color: black;
+}
