@@ -4,6 +4,51 @@
     box-sizing: border-box;
 }
 
+/* */
+
+/* */
+
+/* */
+
+/* */
+
+/* */
+
+/* Footer */
+.footer {
+	background-color: #ff580f;
+	color: #ffc99d;
+	text-align: center;
+	padding: 1em;
+}
+
+.footer li,
+.footer i,
+.footer a {
+	color: #ffc99d;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
+
+/* Media Queries */
 @media only screen and (min-width: 700px) {
+	
+}
+
+@media only screen and (min-width: 900px) {
 	
 }
