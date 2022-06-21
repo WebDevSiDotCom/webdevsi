@@ -5,7 +5,7 @@
 }
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Grold', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
@@ -39,11 +39,19 @@ html {
 
 /* Typography */
 
+@font-face {
+    font-family: 'Grold';
+    src: url(./fonts/GroldRounded-regular.otf),
+         url(./fonts/GroldRounded-Bold.otf);
+}
+
 h1,
 h2,
 h3 {
     line-height: 1;
     margin: 0;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
 }
 
 h1 { font-size: var(--fs-h1) }
@@ -73,6 +81,14 @@ footer .social-list__item {
 
 section {
     padding: 5em 2em;
+}
+
+/* .logo {
+    max-width: 100px;
+} */
+
+.logo-main {
+    max-width: 150px;
 }
 
 /* */
@@ -109,6 +125,10 @@ section {
 
 .social-list__link {
     padding: .5em;
+}
+
+.footer__link {
+    font-family: var(--ff-primary);
 }
 
 /* Media Queries */
