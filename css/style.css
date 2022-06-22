@@ -91,6 +91,11 @@ section {
     max-width: 150px;
 }
 
+.footer__logo {
+    max-width: 150px;
+    display: block;
+}
+
 /* */
 
 /* */
