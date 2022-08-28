@@ -4,23 +4,25 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-/* */
+/* Custom Properties */
 
-/* */
-=======
-/* Custom Properties, update these for your own design */
+@font-face {
+    font-family: 'Grold';
+    src: url(fonts/GroldRounded-Regular.otf);
+    src: url(fonts/GroldRounded-Bold.otf);
+    font-weight: bold;
+  }
 
 :root {
-    --ff-primary: 'Lora', serif;
-    --ff-secondary: 'Roboto Slab', serif;
+    --ff-primary: 'Grold', sans-serif;
+    --ff-secondary: 'Fira Code', monospace;
     
-    --fw-reg: 400;
-    --fw-bold: 700;
+    --fw-reg: 300;
+    --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #f8333c;
+    --clr-dark: #070044;
+    --clr-accent: #b5faff;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -42,10 +44,9 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 
 body {
@@ -71,6 +72,10 @@ strong { font-weight: var(--fw-bold) }
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+}
+
+span {
+    display: inline-block;
 }
 
 /* Buttons */
@@ -147,13 +152,13 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-accent);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -176,18 +181,21 @@ header {
 }
 
 .nav__link {
-    color: inherit;
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: underline;
+    opacity: .75;
+
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: 2em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -217,11 +225,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -230,13 +233,12 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -245,11 +247,9 @@ header {
     left: 0;
     right: 0;
 }
->>>>>>> Stashed changes
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
 
 /*  Intro section  */
 
@@ -294,8 +294,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
-
 
 /*  My services section  */
 
@@ -345,7 +343,6 @@ header {
     }
 }
 
-
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -393,6 +390,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
+    margin: auto;
 }
 
 .portfolio {
@@ -422,28 +420,14 @@ header {
     opacity: .5;
 }
 
-
 /* footer */
 
 .footer {
-<<<<<<< Updated upstream
-	background-color: #ff580f;
-	color: #ffc99d;
-	text-align: center;
-	padding: 1em;
-}
-
-.footer li,
-.footer i,
-.footer a {
-	color: #ffc99d;
-=======
     background: #111;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a { 
@@ -457,12 +441,12 @@ header {
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+    opacity: .9;
+    color: #eee;
 }
 
 .footer__link:hover {
-    text-decoration: underline;
->>>>>>> Stashed changes
+    text-decoration: none;
 }
 
 .social-list {
@@ -481,19 +465,12 @@ header {
     padding: .5em;
 }
 
-<<<<<<< Updated upstream
-/* Media Queries */
-@media only screen and (min-width: 700px) {
-	
-=======
-
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
->>>>>>> Stashed changes
 }
 
 .portfolio-item-individual p {
@@ -501,3 +478,26 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* To Top Button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--clr-dark); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 1em; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1em; /* Increase font size */
+    font-weight: var(--fw-bold);
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
