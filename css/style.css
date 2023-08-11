@@ -511,3 +511,8 @@ Individual portfolio item styles
 .contact-form {
     padding: 2rem;
 }
+
+.contact-form-label {
+    margin: .5rem;
+    padding: 1rem;
+}
