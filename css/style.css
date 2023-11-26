@@ -87,7 +87,7 @@ span {
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
@@ -301,7 +301,6 @@ header {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
 }
@@ -326,8 +325,22 @@ header {
 }
 
 .service {
-    max-width: 500px;
     margin: 0 auto;
+    padding: 2em;
+    border: 1px solid white;
+    background-color: #555;
+}
+
+.service-heading {
+    padding-bottom: .5em;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    margin: 1em 0 2em 0;
+}
+
+.service-text {
+    text-align: left;
 }
 
 @media (min-width: 800px) {
@@ -342,6 +355,8 @@ header {
         margin-left: 2em;
     }
 }
+
+/* About Me */
 
 .about-me {
     max-width: 1000px;
@@ -389,7 +404,7 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: left;    
     margin: auto;
 }
 
@@ -398,9 +413,25 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.portfolio-header {
+    text-align: center;
+    padding: .875em;
+}
+
+.portfolio-info-container {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.portfolio-item-img {
+    margin: auto;
 }
 
 .portfolio__img {
@@ -419,6 +450,14 @@ header {
     transform: scale(1.2);
     opacity: .5;
 }
+
+.portfolio-header {
+    margin-top: 1em;
+}
+
+/* @media (max-width: 600px) {
+
+} */
 
 /* footer */
 
@@ -465,7 +504,7 @@ header {
     padding: .5em;
 }
 
-Individual portfolio item styles
+/* Individual portfolio item styles */
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
@@ -489,8 +528,8 @@ Individual portfolio item styles
     z-index: 99;
     border: none; 
     outline: none;
-    background-color: var(--clr-dark); 
-    color: white; 
+    background-color: var(--clr-accent); 
+    color: var(--clr-dark); 
     cursor: pointer; 
     padding: 1em; 
     border-radius: 10px; 
