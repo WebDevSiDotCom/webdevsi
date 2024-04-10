@@ -404,13 +404,20 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: left;    
+    text-align: center;    
     margin: auto;
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 600px;
+
+}
+
+.new-folio {
+    margin: auto;
+    max-width: 1200px;
 }
 
 .portfolio-header {
