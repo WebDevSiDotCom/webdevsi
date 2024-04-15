@@ -550,11 +550,13 @@ header {
 /* Contact Page CSS */
 .contact-main {
     padding: 3rem;
-    /* background-color: #070044; */
+    max-width: 800px;
 }
 
 .contact-form {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form-label {
