@@ -549,6 +549,7 @@ header {
 
 /* Contact Page CSS */
 .contact-main {
+    margin: auto;
     padding: 3rem;
     max-width: 800px;
 }
