@@ -524,6 +524,15 @@ header {
     margin-right: auto;
 }
 
+/* About Page */
+
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* To Top Button */
 
 #myBtn {
